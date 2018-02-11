@@ -7,8 +7,9 @@ namespace SimpleFhir
   {
     static void Main(string[] args)
     {
-      //The fhir server end point address      
-      string ServiceRootUrl = "http://sqlonfhir-stu3.azurewebsites.net/fhir";
+            //The fhir server end point address      
+            string ServiceRootUrl = "https://api-v5-stu3.hspconsortium.org/MX1STU3/open";
+      //string ServiceRootUrl = "http://sqlonfhir-stu3.azurewebsites.net/fhir";
       //Create a client to send to the server at a given endpoint.
       var FhirClient = new Hl7.Fhir.Rest.FhirClient(ServiceRootUrl);
       // increase timeouts since the server might be powered down
